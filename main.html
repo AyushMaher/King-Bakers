@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <h1>King Bakers</h1>
+    <div class="product-container">
+        <div class="product-card" *ngFor="let product of products">
+            <img src="  download.jpg   " alt="Product Image" class="product-image" />
+            <h2 class="product-name"> Milk </h2>
+            <p class="product-price"> 60 </p>
+            <button class="add-to-cart-button" (click)="addToCart(product)">Add to Cart</button>
+        </div>
+        <div class="product-card" *ngFor="let product of products">
+            <img src="  Bread.jpg   " alt="Product Image" class="product-image" />
+            <h2 class="product-name"> Bread </h2>
+            <p class="product-price"> 30 </p>
+            <button class="add-to-cart-button" (click)="addToCart(product)">Add to Cart</button>
+        </div>
+        <div class="product-card" *ngFor="let product of products">
+            <img src="  Amul.jpg   " alt="Product Image" class="product-image" />
+            <h2 class="product-name"> Butter </h2>
+            <p class="product-price"> 200/kg </p>
+            <button class="add-to-cart-button" (click)="addToCart(product)">Add to Cart</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
